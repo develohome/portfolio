@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <span class="clips"></span><span class="clips"></span><span class="clips"></span>
+    <header>
+        <div class="logo">
+            <h1>development home</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#port">portfólio</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner" id="inicio">
+            <div class="nome">
+                <h1>alex dos santos</h1>
+                <p>desenvolvedor front-end</p>
+            </div>
+            <div class="monitor">
+                <i class="fab fa-html5"></i>
+                <i class="fas fa-code"></i>
+                <i class="fab fa-java"></i>
+                <i class="fab fa-windows"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-css3"></i>
+                <i class="fab fa-node-js"></i>
+                <i class="fab fa-js"></i>
+                <i class="fas fa-database"></i>
+                <i class="fab fa-github-alt"></i>
+                <i class="fab fa-php"></i>
+                <i class="fab fa-python"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fab fa-linux"></i>
+                <i class="fab fa-angular"></i>
+                <i class="fab fa-git-alt"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-github"></i>
+                <i class="fas fa-spinner fa-spin"></i>
+                <i class="fab fa-npm"></i>
+                <i class="fas fa-code-branch"></i>
+                <i class="fab fa-bootstrap"></i>
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-vuejs"></i>
+                <i class="fab fa-wordpress-simple"></i>
+                <i class="fas fa-terminal"></i>
+            </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <h1>sobre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt, culpa officia odio consequuntur quisquam. Alias, perspiciatis. Voluptate nam atque qui cumque incidunt facere, reprehenderit alias iste officiis id a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laboriosam quia pariatur voluptates assumenda. Incidunt repellat fugit, necessitatibus corrupti nulla, ipsam praesentium eaque placeat distinctio nihil suscipit magnam quaerat delectus!</p>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt, culpa officia odio consequuntur quisquam. Alias, perspiciatis. Voluptate nam atque qui cumque incidunt facere, reprehenderit alias iste officiis id a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere laboriosam quia pariatur voluptates assumenda. Incidunt repellat fugit, necessitatibus corrupti nulla, ipsam praesentium eaque placeat distinctio nihil suscipit magnam quaerat delectus!</p>
+        </section>
+        <section class="conhecimento">
+            <h1>conhecimento</h1>
+            <div class="skills">
+                <div class="tec">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-right"></i>
+
+                    <div class="skillWidth">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="skill">
+                    <div class="skillcard">
+                        <div class="skillbox">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx= '70' cy='70' r='70'></circle>
+                                    <circle id="valor" cx= '70' cy='70' r='70'></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>0<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h2 class='text'>Skill</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="work" id="port">
+            <h1>meus trabalhos</h1>
+            <div class="works">
+                <div class="videos">
+                    <video id="slider" autoplay muted loop>
+                        <source src="./video/video1.mp4" type="video/mp4">
+                    </video>
+                    <ul class="navigation">
+                        <li onclick="videoURL('video1.mp4')"><img src="./img/img1.jpg" alt=""></li>
+                        <li onclick="videoURL('video2.mp4')"><img src="./img/img2.jpg" alt=""></li>
+                        <li onclick="videoURL('video3.mp4')"><img src="./img/img3.jpg" alt=""></li>
+                        <li onclick="videoURL('video4.mp4')"><img src="./img/img4.jpg" alt=""></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <section class="contato" id="contato">
+            <h1>contato</h1>
+            <form action="">
+                <div class="bx">
+                   <input type="text">
+                   <span>Nome</span>
+                </div>
+                <div class="bx">
+                    <input type="text" name="" id="">
+                    <span>Email</span>
+                </div>
+                <div class="bx">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <span>Mensagem</span>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Todos os direitos
+    </footer>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        function videoURL(hummmm){
+            document.getElementById('slider').src ="./video/" + hummmm
+        }
+    </script>
+</body>
+</html>

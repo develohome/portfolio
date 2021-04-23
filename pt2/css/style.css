@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import'../font/css/all.min.css';
+@import'./anime.css';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --cor1:#30478C;
+    --cor2:#CED7F2;
+    --cor3:#115DBF;
+    --cor4:#02733E;
+    --cor5:#F25430;
+    --cor6:#FFFFFF;
+}
+body{
+    background: var(--cor2);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+span.clips{
+    display: block;
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    top: 140px;
+    left: -20px;
+    border-radius: 20px;
+    z-index: 1;
+    animation: animaClip 1s forwards;
+    opacity: 0;
+}
+span.clips:nth-child(1){
+    border: 2px solid var(--cor3);
+    
+}
+span.clips:nth-child(2){
+    border: 2px solid var(--cor4);
+    top: 170px;
+    animation-delay: 1s;
+}
+span.clips:nth-child(3){
+    border: 2px solid var(--cor5);
+    top: 200px;
+    animation-delay: 2s;
+}
+@keyframes animaClip{
+    0%{
+        transform: translate(-100% , 50px) rotate(145deg);
+        
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0, -40px) rotate(145deg);
+        opacity: 1;
+    }
+}
+header{
+    height: 70px;
+    width: 100%;
+    background: var(--cor1);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+header h1{
+    color: var(--cor6);
+    text-transform: uppercase;
+}
+header nav{
+
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin-left: 15px;
+}
+header nav ul li a{
+    color: var(--cor6);
+    text-transform: uppercase;
+}
+main{
+    
+    margin-top: 10px;
+}
+main .banner{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: url(../img/undraw_feeling_proud_qne1.svg) no-repeat;
+    background-size: 40%;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+main .banner .nome{
+    width: 500px;
+}
+main .banner .nome h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--cor5);
+    left: -100%;
+    transform: translateY(-100%);
+    position: absolute;
+    animation: animaNome 2s forwards;
+}
+@keyframes animaNome{
+    100%{
+        left: 3rem;
+    }
+}
+main .banner .nome p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    position: absolute;
+    left: 3.1rem;
+    
+}
+main .banner .nome p::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 90%;
+    background: #000;
+    animation: animaDev 1s infinite;
+    opacity: 0;
+    top: 0;
+    margin-left: 3px;
+}
+.scroll{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    top: 10%;
+    left: 10%;
+}
+@keyframes animaDev{
+    0% 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+main .banner .monitor{
+    width: 190px;
+    height: 108px;
+    position: absolute;
+    right: 4.5rem;
+    top: 33%;
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .sobre{
+    background: var(--cor6);
+    padding: 3rem 4rem;
+}
+main .sobre h1{
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+main .sobre p{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+main .conhecimento{
+    padding: 3rem 4rem;
+}
+main .conhecimento h1{
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+main .conhecimento p{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+main .skills{
+    display: flex;
+}
+main .tec{
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 1rem;
+}
+.fa-angle-left, .fa-angle-right{
+    position: absolute;
+    z-index: 1000;
+    font-size: 3rem;
+    height: 100%;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: var(--cor2) ;
+    color: var(--cor6);
+    cursor: pointer;
+}
+.fa-angle-left{
+    left: 0;
+}
+.fa-angle-right{
+    right: 0;
+}
+.skillWidth{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2rem;
+    transition: 1s;
+}
+.skillWidth .card{
+    background: var(--cor6);
+    height: 100%;
+    width: 200px;
+    margin: 0 10px;
+    border: 1px solid #a3abc0;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillWidth .card i{
+    font-size: 7rem;
+    color: #cccccc;
+}
+.skill{
+    position: relative;
+    width: 20%;
+}
+.skill .skillcard{
+    position: relative;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .5s;
+    }
+.skill .skillcard:hover{
+    transform: translateY(-10px);
+}
+.skill svg{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+.skill svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #fcfcfc;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+.skill svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 0) / 100);
+    stroke: var(--cor6) ;
+    stroke-width: 10;
+    transition: 1s;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.percent .number h2{
+    color: var(--cor1);
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.skillcard:hover .percent .number h2{
+    color: var(--cor5);
+    font-size: 60px;
+}
+.percent .number h2 span{
+    font-size: 24px;
+}
+.text{
+    transition: 1s;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+main .work{
+    padding: 3rem 4rem;
+    background: var(--cor6);
+}
+main .work   h1{
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+.works{
+    width: 100%;
+    height: 500px;
+   
+}
+.works .videos{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.works .videos video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.works .videos .navigation{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.works .videos .navigation li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 3px 3px 0;
+    opacity: .7;
+    transition: .5s;
+}
+works .videos .navigation li:hover{
+    opacity: 1;
+}
+.works .videos .navigation li img{
+    width: 120px;
+    height: 100px;
+    transition: .5s;
+}
+.works .videos .navigation li img:hover{
+    width: 200px;
+    height: 180px;
+}
+main .contato{
+    padding: 3rem 4rem;
+    background: url(../img/undraw_contact_us_15o2.svg) no-repeat;
+    background-size:60% ;
+    background-position: center right;
+    height: auto;
+}
+main .contato   h1{
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+form{
+    width: 340px;
+    height: 300px;
+}
+form .bx{
+    display: flex;
+    position: relative;
+    margin-bottom: 70px;
+}
+form .bx input{
+    height: 40px;
+}
+form .bx input, form .bx textarea{
+    position: absolute;
+    background: transparent;
+    border: 1px solid #115DBF;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+form .bx span{
+    position: absolute;
+    color: #30478C;
+    left: 10px;
+    top: 7px;
+}
+ .bx input:focus span, .bx textarea:focus span{
+    left: 0px;
+    font-size: 16px;
+}
+footer{
+    background: var(--cor1);
+    color: var(--cor2);
+}
+
+
+h1{
+    color: var(--cor1);
+}

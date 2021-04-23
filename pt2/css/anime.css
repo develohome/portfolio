@@ -1,0 +1,94 @@
+main .banner .monitor .fab, main .banner .monitor .fas{
+    font-size: 1.2rem;
+    margin: 3px;
+    color: #5a5a5a;
+    animation: animaIcon 3s infinite;
+    opacity: 0;
+}
+main .banner .monitor i:nth-child(){}
+main .banner .monitor i:nth-child(2){
+    animation-delay: .3s;
+}
+main .banner .monitor i:nth-child(3){
+    animation-delay: .6s;
+}
+main .banner .monitor i:nth-child(4){
+    animation-delay: .9s;
+}
+main .banner .monitor i:nth-child(5){
+    animation-delay:  1.2s;
+}
+main .banner .monitor i:nth-child(6){
+    animation-delay: 1.5s;
+}
+main .banner .monitor i:nth-child(7){
+    animation-delay: 1.8s;
+}
+main .banner .monitor i:nth-child(8){
+    animation-delay: 2.1s;
+}
+main .banner .monitor i:nth-child(9){
+    animation-delay: 2.4s;
+}
+main .banner .monitor i:nth-child(10){
+    animation-delay: 2.7s;
+}
+main .banner .monitor i:nth-child(11){
+    animation-delay: 3s;
+}
+main .banner .monitor i:nth-child(12){
+    animation-delay: 3.3s;
+}
+main .banner .monitor i:nth-child(13){
+    animation-delay: 3.9s;
+}
+main .banner .monitor i:nth-child(14){
+    animation-delay: 4.2s;
+}
+main .banner .monitor i:nth-child(15){
+    animation-delay: 4.5s;
+}
+main .banner .monitor i:nth-child(16){
+    animation-delay: 4.8s;
+}
+main .banner .monitor i:nth-child(17){
+    animation-delay: 5.1s;
+}
+main .banner .monitor i:nth-child(18){
+    animation-delay: 5.4s;
+}
+main .banner .monitor i:nth-child(19){
+    animation-delay: 5.7s;
+}
+main .banner .monitor i:nth-child(20){
+    animation-delay: 6s;
+}
+main .banner .monitor i:nth-child(21){
+    animation-delay: 6.3s;
+}
+main .banner .monitor i:nth-child(22){
+    animation-delay: 6.6s;
+}
+main .banner .monitor i:nth-child(23){
+    animation-delay: 6.9s;
+}
+main .banner .monitor i:nth-child(24){
+    animation-delay: 7.2s;
+}
+main .banner .monitor i:nth-child(25){
+    animation-delay: 7.5s;
+}
+main .banner .monitor i:nth-child(26){
+    animation-delay: 7.8s;
+}
+main .banner .monitor i:nth-child(27){
+    animation-delay: 8.1s;
+}
+@keyframes animaIcon{
+    0% 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
